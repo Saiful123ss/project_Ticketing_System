@@ -1,0 +1,92 @@
+/* Body & Container */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav-link {
+    margin-left: 15px;
+    font-weight: 500;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card-header {
+    font-weight: bold;
+    background-color: #f1f3f5;
+}
+.card-body p {
+    margin-bottom: 0.5rem;
+}
+
+/* Ticket Status Badges */
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.8em;
+}
+.badge.bg-primary { background-color: #0d6efd; }
+.badge.bg-warning { background-color: #ffc107; color: #212529; }
+.badge.bg-success { background-color: #198754; }
+.badge.bg-secondary { background-color: #6c757d; }
+
+/* Replies Section */
+#chat-box {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 15px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.message.admin {
+    background-color: #e7f1ff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.message.client {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Reply Form */
+#replyForm textarea {
+    resize: none;
+}
+#replyForm button {
+    margin-top: 10px;
+}
+
+/* Buttons */
+button.btn-outline-primary.active,
+button.btn-outline-warning.active,
+button.btn-outline-success.active,
+button.btn-outline-secondary.active {
+    color: #fff !important;
+}
+
+/* Attachments */
+ul {
+    padding-left: 1rem;
+}
+ul li a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
