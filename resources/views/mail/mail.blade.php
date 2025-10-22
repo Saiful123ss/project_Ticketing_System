@@ -31,7 +31,7 @@
         <p style="font-size: 14px; color: gray;">Or copy this link:</p>
         <p style="word-break: break-all; color: #2563eb;">{{ $track_link }}</p>
 
-        <p style="margin-top: 30px;">Best regards,<br><strong>Reo</strong></p>
+        <p style="margin-top: 30px;">Best regards,<br><strong>Pemaju Digital</strong></p>
         <p style="font-size: 12px; color: gray; text-align: center;">This is an automated message. Please do not reply.</p>
     </div>
 </body>
