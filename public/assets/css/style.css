@@ -25682,10 +25682,13 @@ dl li {
 .sidebar .nav .nav-item .nav-link i {
   color: #ffffff;
 }
-.sidebar .nav .nav-item .nav-link:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+/* Force PurpleAdmin sidebar hover color */
+.sidebar .nav .nav-item .nav-link:hover,
+.sidebar .nav .nav-item .nav-link.active {
+  background: #b66dff !important;
+  color: #fff !important;
 }
+
 .sidebar .nav .nav-item .nav-link i.menu-icon {
   font-size: 1.125rem;
   line-height: 1;
@@ -25726,13 +25729,15 @@ dl li {
   margin-right: 0.25rem;
 }
 .sidebar .nav .nav-item .nav-link .menu-title {
-  color: inherit;
+  color: #ffffff !important;
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
+  font-family: "ubuntu-medium", sans-serif;
   line-height: 1;
   vertical-align: middle;
   white-space: normal;
 }
+
 .sidebar .nav .nav-item .nav-link .badge {
   margin-right: auto;
   margin-left: 1rem;
