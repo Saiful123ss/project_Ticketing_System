@@ -1,51 +1,68 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
   <ul class="nav">
+    <!-- Profile Section -->
     <li class="nav-item nav-profile">
       <a href="#" class="nav-link">
         <div class="nav-profile-image">
-          <img src="{{ asset('assets/images/faces/face1.jpg') }}" alt="profile">
+          <img src="{{ asset('assets/images/faces/face1.jpg') }}" alt="profile" />
           <span class="login-status online"></span>
         </div>
         <div class="nav-profile-text d-flex flex-column">
           <span class="font-weight-bold mb-2">Admin</span>
           <span class="text-secondary text-small">System Administrator</span>
         </div>
+        <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
       </a>
     </li>
 
-    <li class="nav-item">
-      <a class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
+    <!-- Dashboard -->
+    <li class="nav-item menu-items {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.dashboard') }}">
+        <span class="menu-icon">
+          <i class="mdi mdi-speedometer"></i>
+        </span>
         <span class="menu-title">Dashboard</span>
-        <i class="mdi mdi-home menu-icon"></i>
       </a>
     </li>
 
-    <li class="nav-item">
-      <a class="nav-link {{ request()->routeIs('admin.tickets') ? 'active' : '' }}" href="{{ route('admin.tickets') }}">
+    <!-- Tickets -->
+    <li class="nav-item menu-items {{ request()->routeIs('admin.tickets') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.tickets') }}">
+        <span class="menu-icon">
+          <i class="mdi mdi-ticket"></i>
+        </span>
         <span class="menu-title">All Tickets</span>
-        <i class="mdi mdi-ticket menu-icon"></i>
       </a>
     </li>
 
-    <li class="nav-item">
-      <a class="nav-link {{ request()->routeIs('admin.clients') ? 'active' : '' }}" href="{{ route('admin.clients') }}">
+    <!-- Clients -->
+    <li class="nav-item menu-items {{ request()->routeIs('admin.clients') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.clients') }}">
+        <span class="menu-icon">
+          <i class="mdi mdi-account-multiple"></i>
+        </span>
         <span class="menu-title">Clients</span>
-        <i class="mdi mdi-account-multiple menu-icon"></i>
       </a>
     </li>
 
-    <li class="nav-item">
-      <a class="nav-link {{ request()->routeIs('admin.reports') ? 'active' : '' }}" href="{{ route('admin.reports') }}">
+    <!-- Reports -->
+    <li class="nav-item menu-items {{ request()->routeIs('admin.reports') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('admin.reports') }}">
+        <span class="menu-icon">
+          <i class="mdi mdi-file-chart"></i>
+        </span>
         <span class="menu-title">Reports</span>
-        <i class="mdi mdi-file-chart menu-icon"></i>
       </a>
     </li>
 
-    <li class="nav-item">
-      <form method="POST" action="{{ route('admin.logout') }}" class="mt-3">
+    <!-- Logout -->
+    <li class="nav-item menu-items mt-4">
+      <form method="POST" action="{{ route('admin.logout') }}">
         @csrf
-        <button type="submit" class="btn btn-danger w-100">Logout</button>
+        <button type="submit" class="btn btn-gradient-danger w-100">
+          <i class="mdi mdi-logout me-2"></i> Logout
+        </button>
       </form>
     </li>
   </ul>
-</nav> 
+</nav>
