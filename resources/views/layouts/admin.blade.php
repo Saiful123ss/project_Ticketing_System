@@ -3,40 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
+  <title>Admin Panel</title>
 
-  {{-- ✅ PurpleAdmin CSS --}}
+  {{-- CSS --}}
   <link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-  <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" />
 </head>
-
 <body>
   <div class="container-scroller">
+    
+    {{-- ✅ 1. Navbar atas --}}
+    @include('partials.navbar')
 
-    {{-- ✅ Page Body Wrapper (holds sidebar + main content) --}}
     <div class="container-fluid page-body-wrapper">
-
-      {{-- ✅ Sidebar (now correctly placed inside wrapper) --}}
+      
+      {{-- ✅ 2. Sidebar kiri --}}
       @include('partials.sidebar')
 
-      {{-- ✅ Main Panel --}}
+      {{-- ✅ 3. Main content kanan --}}
       <div class="main-panel">
-
-        {{-- ✅ Navbar (optional, only if exists) --}}
-        @includeIf('partials.navbar')
-
-        {{-- ✅ Content --}}
         <div class="content-wrapper">
           @yield('content')
         </div>
+      </div>
 
-      </div> {{-- End Main Panel --}}
-    </div> {{-- End Page Body Wrapper --}}
-  </div> {{-- End Container Scroller --}}
+    </div>
+  </div>
 
-  <!-- ✅ PurpleAdmin JS -->
+  {{-- JS --}}
   <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>
   <script src="{{ asset('assets/js/off-canvas.js') }}"></script>
   <script src="{{ asset('assets/js/hoverable-collapse.js') }}"></script>
