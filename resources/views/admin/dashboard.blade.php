@@ -2,16 +2,15 @@
 
 @section('content')
 {{-- ✅ Include PurpleAdmin CSS --}}
-<link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
+<!--<link rel="stylesheet" href="{{ asset('assets/vendors/mdi/css/materialdesignicons.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/vendors/css/vendor.bundle.base.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-<link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" />
+<link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" />-->
 
-<div class="main-panel">
-  <div class="content-wrapper">
-    <div class="page-header">
-      <h3 class="page-title">Dashboard Overview</h3>
-    </div>
+<div class="page-header">
+  <h3 class="page-title">Dashboard Overview</h3>
+</div>
+
 
     {{-- ✅ Summary Cards --}}
     <div class="row">
@@ -149,9 +148,9 @@
   </div>
 </div>
 
-{{-- ✅ Include PurpleAdmin JS --}}
+<!--{{-- ✅ Include PurpleAdmin JS --}}
 <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>
 <script src="{{ asset('assets/js/off-canvas.js') }}"></script>
 <script src="{{ asset('assets/js/hoverable-collapse.js') }}"></script>
-<script src="{{ asset('assets/js/misc.js') }}"></script>
+<script src="{{ asset('assets/js/misc.js') }}"></script>-->
 @endsection
