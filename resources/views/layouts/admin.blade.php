@@ -14,18 +14,20 @@
 </head>
 <body>
   <div class="container-scroller">
+  <div class="container-fluid page-body-wrapper">
+    
+    {{-- Sidebar di sini --}}
     @include('partials.sidebar')
 
-    <div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
       @includeIf('partials.navbar')
-
-      <div class="main-panel">
-        <div class="content-wrapper">
-          @yield('content')
-        </div>
+      <div class="content-wrapper">
+        @yield('content')
       </div>
     </div>
   </div>
+</div>
+
 
   <!-- ✅ PurpleAdmin JS -->
   <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>
