@@ -14,14 +14,11 @@
 </head>
 <body>
   <div class="container-scroller">
-    {{-- ✅ Sidebar --}}
     @include('partials.sidebar')
 
     <div class="container-fluid page-body-wrapper">
-      {{-- ✅ Navbar (optional if PurpleAdmin has it) --}}
       @includeIf('partials.navbar')
 
-      {{-- ✅ Main Content --}}
       <div class="main-panel">
         <div class="content-wrapper">
           @yield('content')
@@ -30,10 +27,11 @@
     </div>
   </div>
 
-  {{-- ✅ PurpleAdmin JS --}}
+  <!-- ✅ PurpleAdmin JS -->
   <script src="{{ asset('assets/vendors/js/vendor.bundle.base.js') }}"></script>
   <script src="{{ asset('assets/js/off-canvas.js') }}"></script>
   <script src="{{ asset('assets/js/hoverable-collapse.js') }}"></script>
   <script src="{{ asset('assets/js/misc.js') }}"></script>
 </body>
+
 </html>
