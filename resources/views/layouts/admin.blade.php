@@ -12,16 +12,16 @@
 </head>
 <body>
   <div class="container-scroller">
-    
-    {{-- ✅ 1. Navbar atas --}}
+
+    {{-- Navbar atas (DILUAR page-body-wrapper) --}}
     @include('partials.navbar')
 
     <div class="container-fluid page-body-wrapper">
-      
-      {{-- ✅ 2. Sidebar kiri --}}
+
+      {{-- Sidebar kiri --}}
       @include('partials.sidebar')
 
-      {{-- ✅ 3. Main content kanan --}}
+      {{-- Main content kanan --}}
       <div class="main-panel">
         <div class="content-wrapper">
           @yield('content')
