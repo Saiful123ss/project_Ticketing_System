@@ -25635,7 +25635,7 @@ dl li {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 70px);
-  background: linear-gradient(0deg, #6a11cb 0%, #2575fc 100%);
+  background: #ffffff;
   font-family: "ubuntu-regular", sans-serif;
   padding: 0;
   width: 260px;
@@ -25645,7 +25645,6 @@ dl li {
   -moz-transition: width 0.25s ease, background 0.25s ease;
   -ms-transition: width 0.25s ease, background 0.25s ease;
 }
-
 .sidebar .nav {
   overflow: hidden;
   flex-wrap: nowrap;
@@ -25680,15 +25679,8 @@ dl li {
   -webkit-transition-property: color;
 }
 .sidebar .nav .nav-item .nav-link i {
-  color: #ffffff;
+  color: inherit;
 }
-/* Force PurpleAdmin sidebar hover color */
-.sidebar .nav .nav-item .nav-link:hover,
-.sidebar .nav .nav-item .nav-link.active {
-  background: #b66dff !important;
-  color: #fff !important;
-}
-
 .sidebar .nav .nav-item .nav-link i.menu-icon {
   font-size: 1.125rem;
   line-height: 1;
@@ -25729,15 +25721,13 @@ dl li {
   margin-right: 0.25rem;
 }
 .sidebar .nav .nav-item .nav-link .menu-title {
-  color: #ffffff !important;
+  color: inherit;
   display: inline-block;
-  font-size: 0.9375rem;
-  font-family: "ubuntu-medium", sans-serif;
+  font-size: 0.875rem;
   line-height: 1;
   vertical-align: middle;
   white-space: normal;
 }
-
 .sidebar .nav .nav-item .nav-link .badge {
   margin-right: auto;
   margin-left: 1rem;
