@@ -1,20 +1,29 @@
-<nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+<nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
   <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
     <a class="navbar-brand brand-logo" href="{{ route('admin.dashboard') }}">
       <img src="{{ asset('assets/images/logo.svg') }}" alt="logo" />
     </a>
+    <a class="navbar-brand brand-logo-mini" href="{{ route('admin.dashboard') }}">
+      <img src="{{ asset('assets/images/logo-mini.svg') }}" alt="logo" />
+    </a>
   </div>
-  <div class="navbar-menu-wrapper d-flex align-items-stretch">
+  <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
     <ul class="navbar-nav navbar-nav-right">
+      <li class="nav-item nav-profile">
+        <a class="nav-link" href="#">
+          <img src="{{ asset('assets/images/faces/face1.jpg') }}" alt="profile"/>
+          <span class="nav-profile-name">Admin</span>
+        </a>
+      </li>
       <li class="nav-item dropdown">
-        <a class="nav-link" href="#" id="profileDropdown" data-bs-toggle="dropdown">
-          <div class="navbar-profile">
-            <img class="img-xs rounded-circle" src="{{ asset('assets/images/faces/face1.jpg') }}" alt="profile image">
-            <p class="mb-0 d-none d-sm-block navbar-profile-name">Admin</p>
-            <i class="mdi mdi-menu-down d-none d-sm-block"></i>
-          </div>
+        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+          <i class="mdi mdi-bell-outline"></i>
+          <span class="count-symbol bg-danger"></span>
         </a>
       </li>
     </ul>
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+      <span class="mdi mdi-menu"></span>
+    </button>
   </div>
-</nav> 
+</nav>
